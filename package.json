@@ -1,0 +1,39 @@
+{
+  "name": "css-margin-pixels",
+  "style": "css-margin-pixels.css",
+  "version": "1.0.0",
+  "homepage": "http://github.com/mrmrs/css-margin-pixels",
+  "description": "Css module of single purpose classes for setting margins with pixel values",
+  "keywords": [
+    "css",
+    "oocss",
+    "postcss",
+    "margins"
+  ],
+  "css-margins": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-margin-pixels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/css-margin-pixels/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    {
+      "name": "Adam Morse",
+      "email": "hi@mrmrs.cc"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tachyons-cli": "^0.3.2"
+  },
+  "scripts": {
+    "start": "tachyons src/css-margin-pixels.css > css/css-margin-pixels.css && tachyons src/css-margin-pixels.css --minify > css/css-margin-pixels.min.css && tachyons src/css-margin-pixels.css --generate-docs --package=../../package.json > readme.md"
+  }
+}
