@@ -1,7 +1,7 @@
 {
   "name": "css-margin-pixels",
   "style": "css-margin-pixels.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://github.com/mrmrs/css-margin-pixels",
   "description": "Css module of single purpose classes for setting margins with pixel values",
   "keywords": [
