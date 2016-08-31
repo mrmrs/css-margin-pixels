@@ -31,7 +31,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-margin-pixels.css > css/css-margin-pixels.css && tachyons src/css-margin-pixels.css --minify > css/css-margin-pixels.min.css && tachyons src/css-margin-pixels.css --generate-docs --package=../../package.json > readme.md"
