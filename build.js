@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-margin-pixels.css');
+const srcFile = path.join(__dirname, 'src', 'margin-pixels.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-margin-pixels.css',
+  filename: 'margin-pixels.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-margin-pixels.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'margin-pixels.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-margin-pixels.css',
+  filename: 'margin-pixels.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-margin-pixels.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'margin-pixels.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-margin-pixels.css     ${unminified.length} bytes`);
-console.log(`  dist/css-margin-pixels.min.css ${minified.length} bytes`);
+console.log(`  dist/margin-pixels.css     ${unminified.length} bytes`);
+console.log(`  dist/margin-pixels.min.css ${minified.length} bytes`);
